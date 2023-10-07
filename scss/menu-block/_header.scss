@@ -1,0 +1,19 @@
+@use "../mixins";
+.site-menu-header {
+    &__header {
+        @include mixins.display($jus:space-between);
+        padding-top: 33px;
+        padding-bottom: 31px;
+        border-bottom: 1px solid #cbcbcb;
+    }
+    &__hamburger-btn {
+        border: none;
+        background-color: transparent;
+        width: 31px;
+        height: 22px;
+        background-image: url("../../images/menu.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

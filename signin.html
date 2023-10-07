@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__wrapper">
+                <a href="logo">
+                    <img class="logo__img" src="./images/logo.svg" alt="site logo">
+                </a>
+                <button class="site-header__hamburgerbtn"></button>
+            </div>
+            <div class="site-header__navbar">
+                <button class="site-header__navbar-btn">❌</button>
+                <a class="site-header__link site-header__link--menu" href="#">Menu</a>
+                <a class="site-header__link site-header__link--blog" href="#">Blog</a>
+                <a class="site-header__link site-header__link--pricing" href="#">Pricing</a>
+                <a class="site-header__link site-header__link--contact" href="#">Contact</a>
+                <a class="site-header__link site-header__link--login" href="#">Login</a>
+                <a class="site-header__link site-header__link--signup" href="#">Sign up</a>
+            </div>
+        </div>
+    </header>
+    <main class="site-main">
+        <section class="site-main__signup signup">
+            <div class="container">
+                <div class="signup__wrap">
+                    <h1 class="signup__title">Sign Up To eatly</h1>
+                    <div class="signup__systems-wrap">
+                        <button class="signup__systems signup__systems--gogle"></button>
+                        <button class="signup__systems signup__systems--icloud"></button>
+                    </div>
+                    <span class="signup__span">OR</span>
+                    <form class="signup__form">
+                        <input class="signup__input signup__input--useremail" type="email" aria-label="enter your email" placeholder="EMAIL" name="user_email">
+                        <input class="signup__input signup__input--password" type="password" name="user_password" aria-label="enter your password" placeholder="PASSWORD">
+                        <a class="signup__forget-password" href="#">Forget Password ?</a>
+                        <button class="signup__form-btn" type="submit">SIGN IP</button>
+                        <p class="signup__have-acaunt-title">
+                            Create A New Account? 
+                            <a class="signup__login" href="#">Sign Up</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__top">
+                <a href="logo">
+                    <img class="logo" src="./images/logo.svg" alt="">
+                </a>
+                <ul class="site-footer__top-list">
+                    <li class="site-footer__top-item">
+                        <a class="site-footer__item-link" href="#">
+                            <img class="site-footer__item-img" src="./images/instagram.png" alt="">
+                        </a>
+                    </li>
+                    <li class="site-footer__top-item">
+                        <a class="site-footer__item-link" href="#">
+                            <img class="site-footer__item-img" src="./images/linkedin.png" alt="">
+                        </a>
+                    </li>
+                    <li class="site-footer__top-item">
+                        <a class="site-footer__item-link" href="#">
+                            <img class="site-footer__item-img" src="./images/fasebook.png" alt="">
+                        </a>
+                    </li>
+                    <li class="site-footer__top-item">
+                        <a class="site-footer__item-link" href="#">
+                            <img class="site-footer__item-img" src="./images/twiter.png" alt="">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="site-footer__bottom">
+                <ul class="site-footer__bottom-list">
+                    <li class="site-footer__bottom-item">
+                        <a class="site-footer__bottom-link" href="./index.html">Blog</a>
+                    </li>
+                    <li class="site-footer__bottom-item">
+                        <a class="site-footer__bottom-link" href="">Pricing</a>
+                    </li>
+                    <li class="site-footer__bottom-item">
+                        <a class="site-footer__bottom-link" href="">About US</a>
+                    </li>
+                    <li class="site-footer__bottom-item">
+                        <a class="site-footer__bottom-link" href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="site-footer__deep">
+                <p class="site-footer__deep-desc">© 2023 EATLY All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

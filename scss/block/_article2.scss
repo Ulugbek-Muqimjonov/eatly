@@ -1,0 +1,64 @@
+@use "../mixins";
+.article2 {
+    position: relative;
+    padding-top: 79px;
+    padding-bottom: 198px;
+    &__form-wrap {
+        padding: 35px 27px 95px;
+        border-radius: 15px;
+        // opacity: 0.8;
+        background-color: #6c5fbc;
+    }
+    &__title {
+        margin: 0;
+        margin-bottom: 16px;
+        color: #fff;
+        text-align: center;
+        font-family: "Poppins",sans-serif;
+        font-size: 41.447px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 7px;
+        border-radius: 9.257px;
+        background-color: #fff;
+        opacity: 0.8;
+        box-shadow: 0px 4.71731px 29.48318px 0px rgba(0, 0, 0, 0.10);
+    }
+    &__form-inp {
+        padding: 7px;   
+        padding-left: 14px;
+        width: 70%;
+        border: none;
+        background-color: transparent;
+        &::placeholder {
+            color: #878787;
+            font-family: "Poppins",sans-serif;
+            font-size: 10.58px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.317px;
+        }
+    }
+    &__form-btn {
+        padding: 10px 16px 11px 17px;
+        border-radius: 7.319px;
+        background-color: #6c5fbc;
+        color: #fff;
+        border: none;
+    }
+    &__img {
+        position: absolute;
+        top: 269px;
+        left: 24%;
+        width: 169px;
+        height: 170px;
+    }
+}

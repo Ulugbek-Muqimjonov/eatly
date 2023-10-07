@@ -1,0 +1,99 @@
+@use "../mixins";
+.latest-articles {
+    padding-bottom: 11px;
+    &__title {
+        margin: 0;
+        margin-bottom: 59px;
+        text-align: center;
+        color: #323142;
+        font-family: "Poppins",sans-serif;
+        font-size: 25.71px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -1.139px;
+    }
+    &__title-mark {
+        color: #6c5fbc;
+    }
+    &__list {
+        @include mixins.unstyled-list($jus:center);
+        flex-direction: column;
+        row-gap: 50px;
+        margin-bottom: 101px;
+    }
+    &__item {
+        width: 85%;
+        @include mixins.display($ali:start);
+        flex-direction: column;
+        padding: 17px 9px 22px 9px;
+        background-color: #fff;
+        border-radius: 10.888px;
+        box-shadow: 0px 2.68181px 32.18178px 0px #c5c5c540;
+    }
+    &__item-img {
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    &__item-title {
+        margin: 0;
+        margin-bottom: 14px;
+        color: #252525;
+        font-family: "Poppins",sans-serif;
+        font-size: 14.517px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 17.291px;
+    }
+    &__innerdiv {
+        width: 100%;
+        @include mixins.display($jus:space-between)
+    }
+    &__user-name {
+        position: relative;
+        display: flex;
+        align-items: end;
+        // margin-top: auto;
+        color:#000;
+        font-family: "Poppins",sans-serif;
+        font-size: 11.688px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17.922px; 
+        &::after {
+            position: absolute;
+            top: 4px;
+            left: 38px;
+            display: block;
+            color: #8d8d8d;
+            font-family: "Poppins",sans-serif;
+            font-size: 8.083px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            content: "Written By";
+        }
+        &::before {
+            @include mixins.psevdo-el(inline-block,30px,30px,"../../images/user-icon.png");
+            margin-right: 8px;
+        }
+    }
+    &__item-data {
+        color: #b7b4b4;
+        font-family: "Poppins",sans-serif;
+        font-size: 10.888px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21.554px;
+    }
+    &__rightarrow {
+        display:block;
+        margin: 0 auto;
+        width: 32px;
+        height: 32px;
+        background-image: url("../../images/arrowright.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

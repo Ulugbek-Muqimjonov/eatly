@@ -1,0 +1,19 @@
+@use "../mixins";
+.popular-hero {
+    &__wrap {
+        padding-top: 60px;
+    }
+    &__item {
+        margin-bottom: 98px;
+    }
+    &__title {
+        margin: 0;
+        margin-bottom: 49px;
+        color: #323142;
+        font-family: "Poppins",sans-serif;
+        font-size: 24.889px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18.175px;
+    }
+}

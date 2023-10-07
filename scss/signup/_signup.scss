@@ -1,0 +1,136 @@
+@use "../mixins";
+.signup {
+    padding-top: 100px;
+    padding-bottom: 111px;
+    &__title {
+        margin: 0;
+        margin-bottom: 38px;
+        text-align: center;
+        color: #323142;
+        font-family: "Poppins",sans-serif;
+        font-size: 28.436px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+        letter-spacing: -1.137px;
+    }
+    &__systems-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 17px;
+    }
+    &__systems {
+        height: 45px;
+        margin-bottom: 27px;
+        padding: 0 63px;
+        border: none;
+        border-radius: 10.762px;
+        background-color: #eee;
+        background-image: url("../../images/g.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__systems--icloud {
+        background-image: url("../../images/apple.png");
+    }
+    &__span {
+        display: block;
+        margin-bottom: 27px;
+        text-align: center;
+        color: #005a6459;
+        font-family: "Poppins",sans-serif;
+        font-size: 16.143px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.484px;
+    }
+    &__form {
+        @include mixins.display($row:20px);
+        flex-direction: column;
+    }
+    &__input {
+        width: 100%;
+        padding: 20px 10px 20px 64px;
+        border-radius: 11.516px;
+        font-family: "Poppins",sans-serif;
+        font-size: 13.496px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.27px;
+        background-color: #eee;
+        border: 1.5px solid transparent;
+        opacity: 0.5;
+        background-image: url("../../images/usericon.svg");
+        background-size: 17px 18px;
+        background-repeat: no-repeat;
+        background-position: calc(0% + 20px) center;
+        outline: none;
+        &::placeholder {
+            color: #a2a3a6;
+            font-family: "Poppins",sans-serif;
+            font-size: 13.453px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.942px;
+        }
+        &:focus {
+            opacity: 1;
+            border-color: #6c5fbc;
+            background-color: #fff;
+            background-image: url("../../images/activeusericon.png");
+            color: #6c5fbc;
+        }
+    }
+    &__input--useremail {
+        background-image: url("../../images/Email.svg");
+        background-size: 18px 14px;
+        background-position: calc(0% + 19px) center;
+        &:focus {
+            background-image: url("../../images/activeemail.svg");
+        }
+    }
+    &__input--password {
+        background-image: url("../../images/lock.svg"),url("../../images/eye.png");
+        background-size: 15px 19px, 17px 16px;
+        background-position: calc(0% + 19px) center, calc(100% - 23px);
+        &:focus {
+            background-image: url("../../images/activelock.png"),url("../../images/activeeye.png");
+        }
+    }
+    &__form-btn {
+        display: block;
+        margin-bottom: 19px;
+        width: 100%;
+        padding: 20px 0 18px 0;
+        border: none;
+        border-radius: 12.556px;
+        background-color: #6c5fbc;
+        color: #f3f5f6;
+        font-family: "Poppins",sans-serif;
+        font-size: 14.35px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.43px;
+    }
+    &__have-acaunt-title {
+        margin: 0;
+        text-align: center;
+        color: #3e3e3e;
+        font-family: "Poppins",sans-serif;
+        font-size: 15.246px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.152px;
+    }
+    &__login {
+        text-decoration: none;
+        color: #6c5fbc;
+        font-weight: 700;
+    }
+    
+}

@@ -1,0 +1,90 @@
+@use "../mixins";
+.questions {
+    padding-top: 93px;
+    padding-bottom: 95px;
+    &__title {
+        position: relative;
+        margin: 0;
+        margin-bottom: 67px;
+        color: #323142;
+        text-align: center;
+        font-family: "Poppins",sans-serif;
+        font-size: 23.638px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        &::after {
+            position:absolute;
+            top: -12px;
+            left: 241px;
+            @include mixins.psevdo-el(inline-block,22px,20px,"../../images/questionsafter.png")
+        }
+    }
+    &__title-mark {
+        color: #6c5fbc;
+    }
+    &__list {
+        @include mixins.unstyled-list();
+        flex-direction: column;
+        width: 100%;
+    }
+    &__item {
+        height: 50px;
+        padding: 7px 0;
+        width: 100%;
+        border-bottom: 1px solid #adadad;
+        transition: height 0.5s ease;
+        &:active {
+            height: 100px;
+        }
+        &:active .questions__item-summary {
+            display: block;
+        }
+
+        
+    }
+    &__item-desc {
+        position: relative;
+        margin: 0;
+        color: #323142;
+        font-family: "Poppins",sans-serif;
+        font-size: 10.301px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 31.119px;
+        &::after {
+            position: absolute;
+            top: 10px;
+            left:calc(100% - 18px);
+            width: 16px;
+            height: 16px;
+            border: none;
+            border-radius: 50%;
+            background-color: transparent;
+            background-image: url("../../images/Plus.png");
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+            content: "";
+        }
+        
+    }
+    &__item-summary {
+        height: 10px;
+        display: none;
+        margin: 0;
+        color: #979797;
+        text-align: justify;
+        font-family: "Poppins",sans-serif;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        letter-spacing: 0.11px;
+       transition: height 2s ease;
+        
+        
+    }
+}
+

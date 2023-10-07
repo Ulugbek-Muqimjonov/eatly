@@ -1,0 +1,38 @@
+@use "../mixins";
+.site-menu-main {
+    &__article {
+        padding-top: 46px;
+        padding-bottom: 75px;
+    }
+    &__article-innerdiv {
+        position: relative;
+        padding: 12px 150px 43px 23px;
+        background-image: url("../../images/article-bg.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        &::after {
+            position: absolute;
+            top: -11px;
+            left: 277px;
+            // transform: rotate(-165.867deg);
+            @include mixins.psevdo-el(inline-block,20px,14px,"../../images/menu-articel-after.png")
+        }
+    }
+    &__title {
+        margin: 0;
+        color: #f7f8fa;;
+        text-align: center;
+        font-family: "Poppins",sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+    &__article-img {
+        position: absolute;
+        top: 20px;
+        left: 166px;
+        width: 102px;
+        height: 103px;
+    }
+}

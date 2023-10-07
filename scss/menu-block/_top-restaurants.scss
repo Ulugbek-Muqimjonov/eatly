@@ -1,0 +1,127 @@
+@use "../mixins";
+.top-restaurants {
+    &__wrap {
+        padding-top: 81px;
+        padding-bottom: 66px;
+    }
+    &__title {
+        margin: 0;
+        margin-bottom: 59px;
+        color: #323142;
+        text-align: center;
+        font-family: "Poppins",sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; 
+    }
+    &__title-mark {
+        display: block;
+        color: #6c5fbc;
+    }
+    &__list {
+        @include mixins.unstyled-list();
+        flex-direction: column;
+        row-gap: 40px;
+        margin-bottom: 60px;
+    }
+    &__item {
+        padding-bottom: 14px;
+        border-radius: 23.882px;
+        border: 0.995px solid #f4f4f6;
+        border-radius: 24px;
+        background-color:#FFF;
+        box-shadow: 4.72958px 56.75492px 28.37746px 0px #e5e5e5b3;
+    }
+    &__item-img {
+        display: block;
+        width: 100%;
+        margin-bottom: 27px;
+        border-radius: 24px 24px 0 0;
+    }
+    &__item-name {
+        position: relative;
+        margin-left: 27px;
+        color:#323142;
+        font-family: "Poppins",sans-serif;
+        font-size: 20.512px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 33.333px;
+        &::before {
+            position: absolute;
+            display:inline-block;
+            top: -22px;
+            left: 0;
+            padding: 2px 7px;
+            color: #daa31a;
+            font-family: "Poppins",sans-serif;
+            font-size: 10.163px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border-radius: 4.295px;
+            background-color: #f7edd0;
+            content: "Healthy";
+        }
+    }
+    &__item-name--red {
+        &::before {
+            color: #fb471d;
+            background-color: #f7c5ba;
+            content: "Trending";
+        }
+    }
+    &__item-innerdiv {
+        @include mixins.display($jus:flex-start);
+        column-gap: 5px;
+        padding-left: 27px;
+        color:#8e97a6;
+        font-family: "Manrope",sans-serif;
+        font-size: 15.384px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.512px;
+    }
+    
+    &__item-reyting {
+        @include mixins.display();
+        column-gap: 5px;
+        &::before {
+            @include mixins.psevdo-el(inline-block,21px,21px,"../../images/star.svg") 
+        }
+    }
+    &__item-inner {
+        @include mixins.display($jus:space-between)
+    }
+    &__item-mark-btn {
+        margin-right: 21px;
+        width: 32px;
+        height: 32px;
+        border: none;
+        background-color: transparent;
+        background-image: url("../../images/Bookmark.svg");
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: 100%;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: flex-end;
+        // margin-right: 20px;
+        text-align: end;
+        text-decoration: none;
+        color: #acadb9;
+        font-family: "Poppins",sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 45.184px;
+        letter-spacing: -0.1px;
+        &::after {
+            @include mixins.psevdo-el(inline-block,15px,15px,"../../images/rught.png")
+        }
+    }
+}

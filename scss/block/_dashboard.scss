@@ -1,0 +1,189 @@
+@use "../mixins";
+.dashboard {
+    &__wrap {
+        padding-top: 85px;
+        padding-bottom: 106px;
+    }
+    &__title-wrap {
+        margin-bottom: 27px;
+    }
+    &__title {
+        margin: 0;
+        color: #18181b;
+        font-family: "Poppins",sans-serif;
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32.641px;
+        text-align: left;
+    }  
+    &__title-mark {
+        color: #6C5FBC;
+        font-family: "Poppins",sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32.641px;
+    }
+    &__list {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 100px;
+        padding-left: 0;
+        list-style: none;
+        fill: #F9F9F9;
+        background-image: url("../../images/arrov-dovn.png");
+        background-repeat: no-repeat;
+        background-size: 56px 110px;
+        background-position: calc(50% + 99px) calc(50% + 48px);
+        // transform: rotate(-37.469deg);
+    }
+    &__item {
+        width: 70%;
+        @include mixins.display($jus:space-between);
+        margin-bottom: 10px;
+        padding: 3px 11px;
+        border: 1px solid #fff;
+        border-radius: 7.953px;
+        background-color: #fff;
+        box-shadow: 4.4795px 53.75399px 26.87699px 0px #e5e5e5b3;
+        
+    }
+    &__item-title-div {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item-title {
+        color: #323142;
+        font-family: "Poppins",sans-serif;
+        font-size: 12.593px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+    }
+    &__item-span {
+        color:#323142;
+        font-family: "Poppins",sans-serif;
+        font-size: 7.953px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+    }
+    &__item-time {
+        margin-top: auto;
+        margin-bottom: 4px;
+        color: #acadb9;
+        font-family: "Poppins",sans-serif;
+        font-size: 8.616px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+    }
+    &__item-span--red {
+        color: red;
+    }
+    &__item-img {
+        width: 40px;
+        height: 40px;
+    }
+    &__form {
+        padding: 27px 22px;
+        background-color: #fff;
+        border-radius: 14.886px;
+        border: 0.93px solid #edf2f7;
+        box-shadow: 2px 8px 21px -10px rgba(0,0,0,0.75);
+-webkit-box-shadow: 2px 8px 21px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 8px 21px -10px rgba(0,0,0,0.75);
+    }
+    &__form-innerdiv {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 23px;
+    }
+    &__form-title {
+        color: #1a202c;
+        font-family: "Manrope",sans-serif;
+        font-size: 16.747px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 135%; /* 22.608px */
+        letter-spacing: 0.186px;
+    }
+    &__form-sellect {
+        padding: 8px 11px;
+        border-radius: 7.443px;
+        background-color: #fafafa;
+        color: var(--greyscale-900, #1A202C);
+        text-align: right;
+        font-family: "Manrope",sans-serif;
+        font-size: 11.164px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 16.747px */
+        letter-spacing: 0.372px;
+    }
+    &__form-list {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+    &__form-item {
+        margin-bottom: 13px;
+        padding: 15px;
+        border-radius: 11.164px;
+        border: 0.93px solid #edf2f7;
+    }
+    &__form-item-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__form-item-title-wrap {
+        display: flex;
+        // flex-direction: column;
+        margin-bottom: 12px;
+        column-gap: 11px;
+    }
+    &__form-item-title-wrap::before {
+        @include mixins.psevdo-el(inline-block,30px,30px,"../../images/purchesicon1.png")
+    }
+    &__form-item-title-wrap--vaucher::before {
+        background-image: url("../../images/purchesicon2.png");
+    }
+    &__form-item-title {
+        display: flex;
+        flex-direction: column;
+        color: #1a202c;
+        font-family: "Manrope",sans-serif;
+        font-size: 11.164px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 150%;
+        letter-spacing: 0.372px;
+    }
+    &__form-item-incrase {
+        display: block;
+        color: #a0aec0;;
+        font-family: "Manrope",sans-serif;
+        font-size: 9.304px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: 0.372px;
+    }
+    &__form-price {
+        color: #1a202c;;
+        text-align: right;
+        font-family: "Manrope",sans-serif;
+        font-size: 13.025px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 150%;
+        letter-spacing: 0.186px;
+    }
+    &__form-item-img {
+        width: 100%;
+        object-fit: cover;
+    }
+}

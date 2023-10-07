@@ -1,0 +1,24 @@
+@mixin display($display:flex,$jus:center,$ali:center,$col:0,$row:0) {
+    display: $display;
+    justify-content: $jus;
+    align-items: $ali;
+    column-gap: $col;
+    row-gap: $row;
+}
+@mixin psevdo-el($display:inline-block,$w:33px,$h:0.6px,$img) {
+    display: $display;
+    width: $w;
+    height: $h;
+    background-image: url($img);
+    background-size:100%;
+    background-repeat: no-repeat;
+    content: "";
+}
+@mixin unstyled-list($dis:flex,$jus:flex-start,$align:center) {
+    display: $dis;
+    justify-content: $jus;
+    align-items: $align;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}

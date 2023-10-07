@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="site-menu-headar">
+        <div class="container">
+            <div class="site-menu-header__header">
+                <a class="logo" href="./menu.html">
+                    <img class="logo-img" src="./images/logo.svg" alt="">
+                </a>
+                <button class="site-menu-header__hamburger-btn"></button>
+            </div>
+            <div class="site-header__navbar">
+                <button class="site-header__navbar-btn">❌</button>
+                <a class="site-header__link site-header__link--menu" href="#">Menu</a>
+                <a class="site-header__link site-header__link--blog" href="#">Blog</a>
+                <a class="site-header__link site-header__link--pricing" href="#">Pricing</a>
+                <a class="site-header__link site-header__link--contact" href="#">Contact</a>
+                <a class="site-header__link site-header__link--login" href="#">Login</a>
+                <a class="site-header__link site-header__link--signup" href="#">Sign up</a>
+            </div>
+        </div>
+    </header>
+    <main class="site-menu-main">
+        <article class="site-menu-main__article">
+            <div class="container">
+                <div class="site-menu-main__article-innerdiv">
+                    <h1 class="site-menu-main__title">50% OFF</h1>
+                    <img class="site-menu-main__article-img" src="./images/article-img.png" alt="">
+                </div>
+            </div>
+        </article>
+        <section class="site-menu-main__hero menu-hero">
+            <div class="container">
+                <div class="menu-hero__inner">
+                    <h2 class="menu-hero__title">Category</h2>
+                    <ul class="menu-hero__list">
+                        <li class="menu-hero__item">
+                            <img class="menu-hero__item-img" src="./images/pitsa.svg" alt="">
+                            <span class="menu-hero__item-name">Pizza</span>
+                        </li>
+                        <li class="menu-hero__item">
+                            <img class="menu-hero__item-img" src="./images/Hotdog.svg" alt="">
+                            <span class="menu-hero__item-name">Asian</span>
+                        </li>
+                        <li class="menu-hero__item">
+                            <img class="menu-hero__item-img" src="./images/donat.svg" alt="">
+                            <span class="menu-hero__item-name">Donat</span>
+                        </li>
+                        <li class="menu-hero__item">
+                            <img class="menu-hero__item-img" src="./images/Icecream.svg" alt="">
+                            <span class="menu-hero__item-name">Ice</span>
+                        </li>
+                    </ul>
+                    <h3 class="menu-hero__sort-title">Sort By</h3>
+                    <ul class="menu-hero__our-servise-list">
+                        <li class="menu-hero__our-servise-item">Recomended</li>
+                        <li class="menu-hero__our-servise-item">Fast Delivery</li>
+                        <li class="menu-hero__our-servise-item">Most Popular</li>
+                    </ul>
+                    <!-- <h4 class="menu-hero__price-title"></h4> -->
+                    <form class="menu-hero__form">
+                        <label class="menu-hero__form-label" for="inp">Price</label>
+                        <input class="menu-hero__form-inp" type="range" name="our_price" id="inp" min="0" max="6">
+                        <ol class="menu-hero__form-velue-list">
+                            <li class="menu-hero__form-velue-item">0%</li>
+                            <li class="menu-hero__form-velue-item">25%</li>
+                            <li class="menu-hero__form-velue-item">50%</li>
+                            <li class="menu-hero__form-velue-item">100%</li>
+                            <li class="menu-hero__form-velue-item">500%</li>
+                            <li class="menu-hero__form-velue-item">1000%</li>
+                        </ol>
+                        <button class="menu-hero__form-btn" type="submit">Apply</button>
+                    </form>
+                    <form class="menu-hero__search">
+                        <input class="menu-hero__search-inp" type="search" placeholder="Search" aria-label="enter your search thins" name="user_search">
+                        <div class="menu-hero__search-btn-wrap">
+                            <button class="menu-hero__search-food-btn" type="submit">Food</button>
+                            <button class="menu-hero__search-resturent-btn" type="submit">Resturent</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="site-main__top-restaurants top-restaurants">
+            <div class="container">
+                <div class="top-restaurants__wrap">
+                    <h3 class="top-restaurants__title">Our Top <span class="top-restaurants__title-mark">Restaurants</span></h3>
+                    <ul class="top-restaurants__list">
+                        <li class="top-restaurants__item">
+                            <img class="top-restaurants__item-img" src="./images/restaurantsmobile1.png" alt="">
+                            <strong class="top-restaurants__item-name">The Chicken King</strong>
+                            <div class="top-restaurants__item-inner">
+                                <div class="top-restaurants__item-innerdiv">
+                                    <span class="top-restaurants__item-time">24min •</span>
+                                    <span class="top-restaurants__item-reyting">4.8</span>
+                                </div>
+                                <button class="top-restaurants__item-mark-btn"></button>
+                            </div>
+                        </li>
+                        <li class="top-restaurants__item">
+                            <img class="top-restaurants__item-img" src="./images/restaurantsmobile2.png" alt="">
+                            <strong class="top-restaurants__item-name top-restaurants__item-name--red">The Burger King</strong>
+                            <div class="top-restaurants__item-inner">
+                                <div class="top-restaurants__item-innerdiv">
+                                    <span class="top-restaurants__item-time">24min •</span>
+                                    <span class="top-restaurants__item-reyting">4.9</span>
+                                </div>
+                                <button class="top-restaurants__item-mark-btn"></button>
+                            </div>
+                        </li>
+                        <li class="top-restaurants__item">
+                            <img class="top-restaurants__item-img" src="./images/restaurantsmobile3.png" alt="">
+                            <strong class="top-restaurants__item-name top-restaurants__item-name--red">The Burger King</strong>
+                            <div class="top-restaurants__item-inner">
+                                <div class="top-restaurants__item-innerdiv">
+                                    <span class="top-restaurants__item-time">24min •</span>
+                                    <span class="top-restaurants__item-reyting">4.9</span>
+                                </div>
+                                <button class="top-restaurants__item-mark-btn"></button>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="top-restaurants__link" href="#">View All</a>
+                </div>
+            </div>
+            <hr class="line">
+        </section>
+        <section class="site-main__menu-dishes menu-dishes">
+            <div class="container">
+                <div class="menu-dishes__wrap">
+                    <h3 class="menu-dishes__title">
+                        Our Top 
+                        <span class="menu-dishes__title-mark">Dishes</span>
+                    </h3>
+                    <ul class="menu-dishes__list">
+                        <li class="menu-dishes__item">
+                            <button class="menu-dishes__item-like"></button>
+                            <img class="menu-dishes__item-img" src="./images/topdishes1.png" alt="">
+                            <h4 class="menu-dishes__item-title">Chicken Hell</h4>
+                            <div class="menu-dishes__innerdiv">
+                                <span class="menu-dishes__time">24min •</span>
+                                <span class="menu-dishes__reyting">4.8</span>
+                            </div>
+                            <div class="menu-dishes__price-wrap">
+                                <span class="menu-dishes__price">$12.<small class="menu-dishes__residual">99</small></span>
+                                <button class="menu-dishes__add-btn" type="button"></button>
+                            </div>
+                        </li>
+                        <li class="menu-dishes__item">
+                            <button class="menu-dishes__item-like"></button>
+                            <img class="menu-dishes__item-img" src="./images/topdishes2.png" alt="">
+                            <h4 class="menu-dishes__item-title menu-dishes__item-title--red">Swe Dish</h4>
+                            <div class="menu-dishes__innerdiv">
+                                <span class="menu-dishes__time">24min •</span>
+                                <span class="menu-dishes__reyting">4.8</span>
+                            </div>
+                            <div class="menu-dishes__price-wrap">
+                                <span class="menu-dishes__price">$19.<small class="menu-dishes__residual">99</small></span>
+                                <button class="menu-dishes__add-btn" type="button"></button>
+                            </div>
+                        </li>
+                        <li class="menu-dishes__item">
+                            <button class="menu-dishes__item-like"></button>
+                            <img class="menu-dishes__item-img" src="./images/topdishes3.png" alt="">
+                            <h4 class="menu-dishes__item-title menu-dishes__item-title--green">Swe Dish</h4>
+                            <div class="menu-dishes__innerdiv">
+                                <span class="menu-dishes__time">24min •</span>
+                                <span class="menu-dishes__reyting">4.8</span>
+                            </div>
+                            <div class="menu-dishes__price-wrap">
+                                <span class="menu-dishes__price">$19.<small class="menu-dishes__residual">99</small></span>
+                                <button class="menu-dishes__add-btn" type="button"></button>
+                            </div>
+                        </li>
+                        <li class="menu-dishes__item">
+                            <button class="menu-dishes__item-like"></button>
+                            <img class="menu-dishes__item-img" src="./images/topdishes4.png" alt="">
+                            <h4 class="menu-dishes__item-title">Chicken Hell</h4>
+                            <div class="menu-dishes__innerdiv">
+                                <span class="menu-dishes__time">24min •</span>
+                                <span class="menu-dishes__reyting">4.8</span>
+                            </div>
+                            <div class="menu-dishes__price-wrap">
+                                <span class="menu-dishes__price">$12.<small class="menu-dishes__residual">99</small></span>
+                                <button class="menu-dishes__add-btn" type="button"></button>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="menu-dishes__link" href="#">View All</a>
+                </div>
+            </div>
+            <hr class="line">
+        </section>
+        <section class="site-main__questions questions">
+            <div class="container">
+                <div class="questions__wrap">
+                    <h3 class="questions__title">Frequently Asked 
+                        <span class="questions__title-mark"> Questions</span>
+                    </h3>
+                    <ul class="questions__list">
+                        <li class="questions__item">
+                            <p class="questions__item-desc">How long does delivery take?</p>
+                            <div class="questions__item-summary-wrap">
+                                <p class="questions__item-summary">
+                                    You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?
+                                </p>
+                            </div>
+                        </li>
+                        <li class="questions__item">
+                            <p class="questions__item-desc">How Does It Work ?</p>
+                            <div class="questions__item-summary-wrap">
+                                <p class="questions__item-summary">
+                                    You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?
+                                </p>
+                            </div>
+                        </li>
+                        <li class="questions__item">
+                            <p class="questions__item-desc">How does your food delivery service work?</p>
+                            <div class="questions__item-summary-wrap">
+                                <p class="questions__item-summary">
+                                    You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?
+                                </p>
+                            </div>
+                        </li>
+                        <li class="questions__item">
+                            <p class="questions__item-desc">What payment options do you accept?</p>
+                            <div class="questions__item-summary-wrap">
+                                <p class="questions__item-summary">
+                                    You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?
+                                </p>
+                            </div>
+                        </li>
+                        <li class="questions__item">
+                            <p class="questions__item-desc">Do you offer discounts or promotions?</p>
+                            <div class="questions__item-summary-wrap">
+                                <p class="questions__item-summary">
+                                    You Can Get Information By Contacting Our Support Team Have 24/7 Service.What’s The Difference Between Free And Paid Plan ?
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__top">
+                <a href="logo">
+                    <img class="logo" src="./images/logo.svg" alt="">
+                </a>
+                <ul class="site-footer__top-list">
+                    <li class="site-footer__top-item">
+                        <a class="site-footer__item-link" href="#">
+                            <img class="site-footer__item-img" src="./images/instagram.png" alt="">
+                        </a>
+                    </li>
+                    <li class="site-footer__top-item">
+                        <a class="site-footer__item-link" href="#">
+                            <img class="site-footer__item-img" src="./images/linkedin.png" alt="">
+                        </a>
+                    </li>
+                    <li class="site-footer__top-item">
+                        <a class="site-footer__item-link" href="#">
+                            <img class="site-footer__item-img" src="./images/fasebook.png" alt="">
+                        </a>
+                    </li>
+                    <li class="site-footer__top-item">
+                        <a class="site-footer__item-link" href="#">
+                            <img class="site-footer__item-img" src="./images/twiter.png" alt="">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="site-footer__bottom">
+                <ul class="site-footer__bottom-list">
+                    <li class="site-footer__bottom-item">
+                        <a class="site-footer__bottom-link" href="./index.html">Blog</a>
+                    </li>
+                    <li class="site-footer__bottom-item">
+                        <a class="site-footer__bottom-link" href="">Pricing</a>
+                    </li>
+                    <li class="site-footer__bottom-item">
+                        <a class="site-footer__bottom-link" href="">About US</a>
+                    </li>
+                    <li class="site-footer__bottom-item">
+                        <a class="site-footer__bottom-link" href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="site-footer__deep">
+                <p class="site-footer__deep-desc">© 2023 EATLY All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const form = document.querySelector(".menu-hero__form");
+        const input = form.querySelector(".menu-hero__form-inp");
+        form.addEventListener("submit",evt => {
+            evt.preventDefault()
+            const inputVaule = input.value;
+            console.log(inputVaule);
+        })
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

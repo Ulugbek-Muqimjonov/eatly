@@ -1,0 +1,78 @@
+@use "../mixins";
+.coustomer {
+    &__wrap {
+        padding-top: 90px;
+    }
+    &__title {
+        margin: 0;
+        margin-bottom: 55px;
+        color: #323142;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; 
+    }
+    &__title-mark {
+        display: block;
+        color: #6c5fbc;
+        font-family: "Poppins",sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+    }
+    &__name {
+        color: #030314;
+        font-family: "Poppins";
+        font-size: 12.449px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18.673px; /* 150% */
+    }
+    &__data {
+        display: block;
+        color: #5e5d5d;
+        font-family: "Quicksand",sans-serif;
+        font-size: 9.959px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15.561px; /* 156.25% */
+    }
+    &__summary {
+        margin: 0;
+        color: #636363;
+        text-align: justify;
+        font-family: "Poppins",sans-serif;
+        font-size: 8px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 15.561px;
+    }
+    &__summary::after {
+        @include mixins.psevdo-el(inline-block,82px,13px,"../../images/stars.png");
+        margin-top: 22px;
+    }
+    &__innerdiv {
+        display: flex;
+        align-items: center;
+        column-gap: 13px;
+        margin-bottom: 22px;
+    }
+    &__innerdiv::before {
+        @include mixins.psevdo-el(inline-block,42px,42px,"../../images/user.png")
+    }
+    &__slide {
+        background-image: url("../../images/path.png");
+        background-repeat: no-repeat;
+        background-size: 35px 26px;
+        background-position: calc(50% + 80px) calc(50% - 63px);
+       
+    }
+}
+.mySwiper {
+    box-shadow: 2px 8px 147px -51px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 8px 147px -51px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 8px 147px -51px rgba(0,0,0,0.75);
+}
